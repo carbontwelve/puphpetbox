@@ -239,7 +239,7 @@ Add as many scripts as you like! However, **if you use Windows**, ensure you sav
 
 ## Suggestions
 
-Any suggestions/improvements via Push Requests welcome! 
+Any suggestions/improvements via Pull Requests welcome! 
 
 ## Addendum
 

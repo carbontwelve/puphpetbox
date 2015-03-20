@@ -1,6 +1,6 @@
 # puphpetbox
 
-A puphpet/puppet/vagrant config that installs a local, virtual PHP development server/environment.
+A PuPHPet/Puppet/Vagrant config that installs a local, virtual PHP development server/environment.
 
 ## Based on/uses
 

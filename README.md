@@ -44,7 +44,7 @@ You can then copy the `puphpet/` folder and `VagrantFile` to your project.
 
 In `config.yaml`, modify the `synced_folder:` and `vhosts:` entries to match your project.
 
-You only need to change the `target` 
+You only need to change the `target` unless you're using more than one vhost (I personally recommend that you have one VM per project), in which case you'll also need to change the `source`.
 
 ### vagrant up
 
@@ -243,4 +243,4 @@ Any suggestions/improvements via Push Requests welcome!
 
 ## Addendum
 
-You can create your own PuPHPet config at the [PuPHPet website](http://puphpet.com)
+You can create your own PuPHPet config at the [PuPHPet website](http://puphpet.com) (created by Juan Treminio)

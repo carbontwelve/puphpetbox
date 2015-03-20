@@ -44,7 +44,9 @@ You can then copy the `puphpet/` folder and `VagrantFile` to your project.
 
 In `config.yaml`, modify the `synced_folder:` and `vhosts:` entries to match your project.
 
-You only need to change the `target` unless you're using more than one vhost (I personally recommend that you have one VM per project), in which case you'll also need to change the `source`.
+The `source: 'C:/myproject'` entry is the folder that your project resides in, and the target is where your project  will be copied to, on the VM.
+
+You'll only need to change the `source`, unless you're using more than one vhost (I personally recommend that you have one VM per project), in which case you'll also need to change the `target`.
 
 ### vagrant up
 

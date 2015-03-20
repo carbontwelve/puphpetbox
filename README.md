@@ -40,6 +40,12 @@ Clone this repo (right click in the dir and choose Git Bash) and use:
 
 You can then copy the `puphpet/` folder and `VagrantFile` to your project.
 
+### Modify the default project settings to match your project
+
+In `config.yaml`, modify the `synced_folder:` and `vhosts:` entries to match your project.
+
+You only need to change the `target` 
+
 ### vagrant up
 
 ---
@@ -50,7 +56,7 @@ You can then copy the `puphpet/` folder and `VagrantFile` to your project.
 
 Go to your project folder and type `vagrant up`. This will create a new VM and sync your project folder to it, amongst other things.
 
-Go and get a :coffee: while PuPHPet does it's thing.
+Go and get a :coffee: while PuPHPet does it's thing. If you're on my team, heck, why not get me one while you're up? :wink:
 
 As long as you don't see a sea of red text, everything should be fine!
 

@@ -72,9 +72,15 @@ You could also use an SSH client of your choice, for instance [PuTTY](http://www
 
 **Windows users will need to use** [PuTTYGEN](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) in order to convert the ID_RSA keyfile to OpenSSH format.
 
-### Set your hosts file (on host machine)
+### Automaticaly settinging your hosts file (on host machine)
 
-Open your hosts file on your operating system, and add (for the default setup).
+From the command line install the [vagrant hosts updater plugin](https://github.com/cogitatio/vagrant-hostsupdater) using the following command `vagrant plugin install vagrant-hostsupdater`
+
+Once the plugin is installed, during `vagrant up` the hosts file on your machine will be updated to reflect the settings of your new vagrant  box, additonally the changes will be removed upon `vagrant destroy` and `vagrant halt`.
+
+### Manualy setting your hosts file (on host machine)
+
+If you prefer to manually set your hosts file, open your hosts file on your operating system, and add (for the default setup).
 
 `192.192.168.56.101 myproject.local`
 
@@ -169,7 +175,7 @@ apache:
             ssl_certs_dir: ''
     mod_pagespeed: 0
 
-```    
+```
 
 ### Synced folders
 
@@ -193,9 +199,9 @@ synced_folder:
                 - '-z'
             exclude:
                 - .vagrant/
-            auto: 'false'      
+            auto: 'false'
 
-```               
+```
 
 You can also specify files you don't want to sync, change the sync type, and other stuff.
 
@@ -214,7 +220,7 @@ packages:
     - bmon
     - p7zip-full
 
-```        
+```
 
 #### PHP modules
 
@@ -235,13 +241,13 @@ modules:
 
 View [the PuPHPet website](https://puphpet.com/#system), scroll to the bottom of the page to learn how the scripts in `puphpet/files` work.
 
-I've included files that install [Nodejs w/NPM](https://nodejs.org/), [PHP GD graphics library](http://php.net/manual/en/book.image.php) and [Memcached](http://memcached.org/). If you don't want to use these, simply delete the files! 
+I've included files that install [Nodejs w/NPM](https://nodejs.org/), [PHP GD graphics library](http://php.net/manual/en/book.image.php) and [Memcached](http://memcached.org/). If you don't want to use these, simply delete the files!
 
 Add as many scripts as you like! However, **if you use Windows**, ensure you save the files with Unix *LF* character line endings, rather than Windows based *CRLF* endings, or they will error when you provision the machine.
 
 ## Suggestions
 
-Any suggestions/improvements via Pull Requests welcome! 
+Any suggestions/improvements via Pull Requests welcome!
 
 ## Addendum
 

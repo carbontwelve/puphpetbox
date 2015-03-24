@@ -82,6 +82,11 @@ Vagrant.configure('2') do |config|
     config.cache.scope = :box
   end
 
+  unless Vagrant.has_plugin?('vagrant-hostsupdater')
+    puts 'vagrant-hostsupdater missing, please install the plugin:'
+    puts 'vagrant plugin install vagrant-hostsupdater'
+  end
+
   data['vm']['synced_folder'].each do |i, folder|
     if folder['source'] != '' && folder['target'] != ''
       sync_owner = !folder['owner'].nil? ? folder['owner'] : 'www-data'
